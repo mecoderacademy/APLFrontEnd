@@ -1,0 +1,54 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+
+<div class="container-fluid" role="main">
+<div *ngIf="!isLoading">
+ <form enctype="multipart/form-data"> 
+   <div class="form-group">
+     
+      <label class="col mr-2">{{ title }} app is running!</label>
+     
+ 
+    <file-upload (fileUploaded)="onFileUploaded($any($event))"></file-upload>
+  
+    <button type="button"  [disabled]="isLoading" (click)="onSave()" class="btn btn-success mr-2">submit</button>
+  </div>
+  <label class="form-group text-success">{{validation}}</label>
+  
+ </form>
+   
+  </div>
+  <div *ngIf="isLoading" class="loader"></div>
+  </div>
+
+ 
+  
+
+
+ 
+
+  <!-- Footer -->
+  <footer>
+  
+  </footer>
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>

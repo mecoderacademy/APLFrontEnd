@@ -17,7 +17,7 @@
      
       <label class="col mr-2">{{ title }} app is running!</label>
      
- 
+      <img *ngIf="uploadedImageSrc" [src]="uploadedImageSrc" alt="Uploaded Image" />
     <file-upload (fileUploaded)="onFileUploaded($any($event))"></file-upload>
   
     <button type="button"  [disabled]="isLoading" (click)="onSave()" class="btn btn-success mr-2">submit</button>

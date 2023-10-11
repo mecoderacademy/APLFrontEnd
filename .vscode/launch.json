@@ -19,9 +19,9 @@
             "request": "launch",
             "runtimeArgs": [
               "--inspect-brk",
-              "C:/Users/MESH USER/Desktop/Test/Bacs/node_modules/jest/bin/jest.js",
+              "C:/Users/MESH USER/Desktop/Test/APLFrontend/node_modules/jest/bin/jest.js",
               "--runInBand",
-              "-c", "${workspaceFolder}/bacs/jest.config.js"
+              "-c", "${workspaceFolder}/APLFrontend/jest.config.js"
             ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",

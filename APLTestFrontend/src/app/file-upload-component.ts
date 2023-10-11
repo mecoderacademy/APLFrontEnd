@@ -21,7 +21,7 @@ export class FileUpload implements OnInit{
   {
     if(file.length>0){
       this.file=file[0];
-      if(this.file.type && this.file.type=="text/csv"){
+      if(this.file.type && (this.file.type=="image/jpeg" || this.file.type=="image/png")){
         this._fileExportService?.upload(this.file);
       }
     }

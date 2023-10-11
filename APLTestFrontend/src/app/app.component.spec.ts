@@ -11,7 +11,7 @@ describe('AppComponent', () => {
     
   });
 
-  it(`should have as title 'Bacs'`, () => {
+  it(`should have as title 'APLFrontend'`, () => {
     
   });
 
